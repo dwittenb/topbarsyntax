@@ -55,6 +55,7 @@ class syntax_plugin_topbarsyntax extends DokuWiki_Syntax_Plugin
 /* render output
 * @author Michael Klier <chi@chimeric.de>
 * modified by Taggic <taggic@t-online.de>
+* modified by Dietrich Wittenberg <info.wittenberg@online.de>
 */   
     function render($mode, &$renderer, $data) {
         $width = $data[0];   // width of the main bar
@@ -67,13 +68,15 @@ class syntax_plugin_topbarsyntax extends DokuWiki_Syntax_Plugin
         $found = false;
         $tbar  = '';
         $path  = explode(':', $ID);
+        $topbar=$this->getConf('topbarname');
      
         while(!$found && count($path) >= 0) {
-            $tbar = implode(':', $path) . ':' . 'topbar';
+            $tbar = implode(':', $path) . ':' . $topbar; //'topbar';
             $found = @file_exists(wikiFN($tbar));
             array_pop($path);
             // check if nothing was found
-            if(!$found && $tbar == ':topbar') return;
+            //if(!$found && $tbar == ':topbar') return;
+            if(!$found && $tbar == ':'.$topbar) return;
         }
      
         if($found && auth_quickaclcheck($tbar) >= AUTH_READ) {
