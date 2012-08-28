@@ -7,13 +7,12 @@
 }
 /* ---------- Navigation horizontal ----------- */
 div.dokuwiki div#tpl_smplbar_navi1 {
-  xborder: 1px solid __border__;
-  xbackground-color: __tab_bck__; /*#ddddff;*/
+  border: 1px solid __border__;
+  background-color: #ddddff;
   margin-left: auto;
   height: 1.8em;
-  margin: 0.1em 0 0.5em 0;
-  xborder-radius: 0.3em;
-	cursor: default;
+  margin: 0.2em 0 0.5em 0;
+  border-radius: 0.3em;
 }
  
 *+ html div.dokuwiki div#tpl_smplbar_navi1 {
@@ -21,44 +20,29 @@ div.dokuwiki div#tpl_smplbar_navi1 {
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 ul {
-  border: 1px outset __tab_hover__;
-	xbackground-color: __tab_bck__; /*#ddddff;*/
+  background-color: #ddddff;
   list-style: none;
   float: left;
   margin: 0;
   padding: 0;
-  border-radius: 0.3em;
 }
  
-/* format of main - li - button*/
 div.dokuwiki div#tpl_smplbar_navi1 ul li {
-	float: left;
+  float: left;
   margin: 0;
   margin-right: 0em;
-  width: 100px;	/* width of button */
-  height: 1.65em;
-	color: black;
-  xborder-radius: 0.3em;
-  background-color: __tab_bck__;
+  width: 200px;
+  height: 1.8em;
 }
-
-/* format of dropdown - li - button*/
-div.dokuwiki div#tpl_smplbar_navi1 ul ul li {
-  width: 170px;	/* width of button */
-	height: auto; /* to show full text with linebreaks */
-	border-bottom: 1px inset;
-	padding-top: 0.3em;
-	padding-bottom: 0.3em;
-}
-
-	div.dokuwiki div#tpl_smplbar_navi1 a {
-	display: inline-block; /* !!! select multiline as block */
+ 
+div.dokuwiki div#tpl_smplbar_navi1 a {
+  display: block;
   text-decoration: none;
   border-bottom: none;
-  xpadding: 0em;
-  padding-left: -0.8em;
-  margin-right: 0.1em;
-  xheight: 1.6em;	/* !!! dont use fixed height, to show linebreak */
+  padding: 0em;
+  padding-left: 0.8em;
+  margin: 0;
+  height: 1.8em;
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 a.wikilink2 {
@@ -74,14 +58,12 @@ div.dokuwiki div#tpl_smplbar_navi1 a.interwiki {
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 li:hover {
-  background-color: __tab_hover__; /* #aaaaed; */
-	color: white;
+  background-color: #aaaaed;
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 a:hover {
-  background-color: __tab_hover__; /* #aaaaed; */
+  background-color: #aaaaed;
   text-decoration: underline;
-	color: white;
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 li {
@@ -91,26 +73,18 @@ div.dokuwiki div#tpl_smplbar_navi1 li {
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 ul ul {
-  border: 2px none __tab_bck__;
-	border-top: 3px groove white;
-  xborder: 1px solid __tab_bck__;
-	position: absolute;
-  xborder-radius: 0.3em;
+  border: 1px solid __border__;
+  position: absolute;
+  border-radius: 0.3em;
   z-index: 500;
-  margin-left: -0.3em;
-	margin-top: 0.1em;	/* depends on hight of ul li */
-	box-shadow: 5px 5px 10px black ;
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 ul ul ul {
-  top: -0.0em;
+  top: -0.5em;
   left: 100%;
-  border: 2px none __tab_bck__;
-	xborder: 1px solid __tab_bck__;
-  margin-top: 4px;
-	margin-left: -1.3em;
-  xborder-radius: 0.3em;
-	box-shadow: 5px 5px 10px black;
+  border: 1px solid __border__;
+  margin-top: 5px;
+  border-radius: 0.3em;
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 ul ul,
@@ -128,7 +102,7 @@ div.dokuwiki div#tpl_smplbar_navi1 ul ul ul li:hover ul {
 /* ---------- Navigation vertical left ----------- */
 div.dokuwiki div#tpl_smplbar_navi2 {
   border: 1px solid __border__;
-  background-color: __tab_bck__; /* #ddddff; */
+  background-color: #ddddff;
   margin-left: auto;
   height: auto;
   margin: 0.2em 2em 0.5em 0;
@@ -142,7 +116,7 @@ div.dokuwiki div#tpl_smplbar_navi2 {
  
 div.dokuwiki div#tpl_smplbar_navi2 ul {
   display: block;
-  background-color: __tab_bck__; /* #ddddff; */
+  background-color: #ddddff;
   list-style: none;
   padding: 0em;
   padding-left: 0.8em;
@@ -151,7 +125,7 @@ div.dokuwiki div#tpl_smplbar_navi2 ul {
 }
 
 div.dokuwiki div#tpl_smplbar_navi2 ul li {
-  background-color: __tab_bck__; /* #ddddff; */
+  background-color: #ddddff;
   float: left;
   margin: 0;
   width: 10em;
@@ -181,11 +155,11 @@ div.dokuwiki div#tpl_smplbar_navi2 a.interwiki {
 }
  
 div.dokuwiki div#tpl_smplbar_navi2 li:hover {
-  background-color: __tab_hover__; /* #aaaaed; */
+  background-color: #aaaaed;
 }
  
 div.dokuwiki div#tpl_smplbar_navi2 a:hover {
-  background-color: __tab_hover__; /* #aaaaed; */
+  background-color: #aaaaed;
   text-decoration: underline;
 }
  
@@ -236,7 +210,7 @@ div.dokuwiki div#tpl_smplbar_navi3 {
   position: absolute;
   right: 120px;
   border: 1px solid __border__;
-  background-color: __tab_bck__; /* #ddddff; */
+  background-color: #ddddff;
   float: right;
   border-radius: 0.3em;
   height: auto;
@@ -248,7 +222,7 @@ div.dokuwiki div#tpl_smplbar_navi3 {
  
 div.dokuwiki div#tpl_smplbar_navi3 ul {
   display: block;
-  background-color: __tab_bck__; /* #ddddff; */
+  background-color: #ddddff;
   list-style: none;
   padding: 0em;
   padding-left: 0.8em;
@@ -257,7 +231,7 @@ div.dokuwiki div#tpl_smplbar_navi3 ul {
 }
 
 div.dokuwiki div#tpl_smplbar_navi3 ul li {
-  background-color: __tab_bck__; /* #ddddff; */
+  background-color: #ddddff;
   float: right;
   margin: 0;
   width: 10em;
@@ -287,11 +261,11 @@ div.dokuwiki div#tpl_smplbar_navi3 a.interwiki {
 }
  
 div.dokuwiki div#tpl_smplbar_navi3 li:hover {
-  background-color: __tab_hover__; /* #aaaaed; */
+  background-color: #aaaaed;
 }
  
 div.dokuwiki div#tpl_smplbar_navi3 a:hover {
-  background-color: __tab_hover__; /* #aaaaed; */
+  background-color: #aaaaed;
   text-decoration: underline;
 }
  
